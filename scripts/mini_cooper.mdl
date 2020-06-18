@@ -1,0 +1,14 @@
+frames 1
+basename teapot_anim
+constants brass 0.329412 0.780392 0.992157 0.223529 0.568627 0.941176 0.027451 0.113725 0.807843
+push
+move 200 200 0
+scale 3 3 3
+rotate x 270
+rotate z 60
+rotate y 330
+mesh brass :minicooper.txt
+display
+save minicooper.png
+
+vary spinny 0 29 0 1

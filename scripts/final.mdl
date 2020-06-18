@@ -1,0 +1,58 @@
+frames 27
+basename final_anim
+constants brass 0.329412 0.780392 0.992157 0.223529 0.568627 0.941176 0.027451 0.113725 0.807843
+constants shiny_purple 0.3 0.2 0.8 0.3 0 0 0.3 0.2 0.8
+constants shiny_teal 0.3 0.0 0.0 0.3 0.2 0.8 0.3 0.2 0.8
+constants shiny_green 0.0 0.0 0.0 0.3 0.2 0.8 0.0 0.0 0.0
+constants dull_pink 0.3 0.8 0.2 0.2 0.7 0.1 0.2 0.7 0.1
+constants dull_yellow 0.3 0.8 0.2 0.3 0.8 0.2 0 0 0
+constants glossy_pink 0.5 0.8 0.8 0 0.5 0.8 0.5 0.8 0.8
+constants glossy_blue 0 0.5 0.8 0.3 0.6 0.8 0.9 0.8 0.8
+
+
+
+
+scale 28 28 28
+move 8.5 7 0
+push
+scale 1.2 1.2 1.2 size_up
+mesh shiny_green :gourd.txt
+pop
+rotate z 45 spin
+rotate z -45 spinn
+push
+move 4 4 0
+mesh glossy_pink :gourd.txt
+pop
+push
+move 4 -4 0
+mesh glossy_pink :gourd.txt
+pop
+push
+move -4 4 0
+mesh glossy_pink :gourd.txt
+pop
+push
+move -4 -4 0
+mesh glossy_pink :gourd.txt
+pop
+scale 0.5 0.5 0.5
+move 7 0 0
+mesh glossy_blue :gourd.txt
+move -14 0 0
+mesh glossy_blue :gourd.txt
+move 7 7 0
+mesh glossy_blue :gourd.txt
+move 0 -14 0
+mesh glossy_blue :gourd.txt
+
+
+
+
+
+vary size_up 0 13 0 1
+vary size_down 14 26 0 1
+vary spin 0 26 0 1
+vary spinn 14 26 0 1
+vary drive 21 25 0 1
+vary test 21 22 1 1

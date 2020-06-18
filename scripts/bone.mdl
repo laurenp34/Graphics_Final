@@ -1,0 +1,17 @@
+frames 1
+basename teapot_anim
+constants brass 0.329412 0.780392 0.992157 0.223529 0.568627 0.941176 0.027451 0.113725 0.807843
+push
+move 200 600 0
+scale 6 6 6
+pop
+push
+move 100 50 0
+scale 3 3 3
+rotate x 30
+rotate y 30
+mesh brass :bone.txt
+display
+save bone.png
+
+vary spinny 0 29 0 1
